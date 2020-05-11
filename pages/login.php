@@ -13,14 +13,15 @@
         <meta name="description" content="Découvrez des casques moto dépassant même les exigences des tests de sécurité. Tous les casques Nolark au meilleur prix et avec en prime la livraison gratuite !">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/styles.css" rel="stylesheet" type="text/css">
-        <link href="../css/conexion.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="../favicon.ico">
     </head>
     <body>
         <?php
         include('../includes/header.html.inc.php');
-        //include('../includes/conexiondb.php');
         ?>
+        <div class="header">
+            <h2>Se connecter</h2>
+        </div>
         <form method ="post" actiion ="login.php">
             <div class ="input-group">
                 <label>Nom d'utilisateur</label>
@@ -31,13 +32,15 @@
                 <input type ="password" name="password_1">
             </div>
             <div class ="input-group">
-                <button type="submit" name ="login" classe="btn">Se connecter</button>
+                <button type="submit" name ="login" class="btn">Se connecter</button>
             </div>
             <p>
+                <br><br>
                 Pas encore membre ? <a href="register.php">S'enregister ici </a>
-            </p>
-            
-            
+            </p>  
+
+
+
         </form>
     </div>
 </body>

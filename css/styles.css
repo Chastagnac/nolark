@@ -1,3 +1,52 @@
+
+/*CSS DU COMPTE*/
+form {
+    width: 50%;
+    margin : 0px auto;
+    padding : 20px;
+    border : 1px solid #B0C4DE;
+    background : white;
+    border-radius: 0px 0px 10px 10px; 
+}
+
+.input-group label{
+    display: block;
+    text-align : left;
+    margin : 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width : 93%;
+    padding : 5px 10px;
+    font-size : 16px;
+    border-radius: 5px;
+    border : 1px solid gray;
+}
+
+
+.btn {
+    padding : 10px;
+    font-size : 15px;
+    cikir : white;
+    background : #5F9EA0;
+    border : none;
+    border-radius : 5px;
+}
+
+.error {
+    width: 92%;
+    margin : 10px; 
+    padding : 10px;
+    border : 1px solid #a94442;
+    color :#a94442;
+    background : #f2dede;
+    border-radius: 5px;
+    text-align : left;
+}
+
+
+
 * {
     font-family: 'Montserrat'; /* Police par défaut */
     box-sizing: border-box; /* Les tailles de conteneurs incluent bordures et 
@@ -52,15 +101,15 @@ nav ul li {
     list-style-type: none; /* Cette liste n'a pas de puce */
     font-size: x-large; /* Le texte est grossi en XL */
     flex-grow: 1; /* L'espace occupé est élargie */
-    
+
 }
 
 nav ul li a {
     padding: 1px; /* Marge intérieure */
     color: white; /* Couleur du texte */
-    
 
-    
+
+
 }
 nav ul li:hover {
     background-color:#E8CC5C; /* Couleur du fond au passage de la souris */
@@ -191,7 +240,7 @@ footer a{
 }
 
 .wrapper ul {
-    
+
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -276,39 +325,6 @@ ul li:hover {
 }
 
 
-/*CSS DU COMPTE*/
-form {
-    width: 50%;
-    margin : 0px auto;
-    padding : 20px;
-    border : 1px solid #B0C4DE;
-    background : white;
-    border-radius: 0px 0px 10px 10px; 
-}
-
-.input-group label{
-    display: block;
-    text-align : left;
-    margin : 3px;
-}
-
-.input-group input {
-    height: 30px;
-    width : 93%;
-    padding : 5px 10px;
-    font-size : 16px;
-    border-radius: 5px;
-    border : 1px solid gray;
-}
-
-.btn {
-    padding : 10px;
-    font-size: 15px;
-    color : white;
-    background : #bbb;
-    border: none;
-    border-radius : 50px;
-}
 
 /* Smartphone */
 @media screen and (max-width:768px) {

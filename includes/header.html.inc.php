@@ -18,7 +18,7 @@ $pages = array(
     'Piste' => $dirPages . 'piste.php',
     'Enfants' => $dirPages . 'enfants.php',
     'Contacter' => $dirPages . 'nous-contacter.php',
-    'Compte' => $dirPages . 'register.php',
+    'Compte' => $dirPages . 'login.php',
     'Simulateur' => $dirPages . 'simulateur.php',
     'Prime' => $dirPages . 'livrexpress.php'
 );
