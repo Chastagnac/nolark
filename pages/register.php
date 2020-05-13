@@ -14,6 +14,7 @@ include('../includes/conexiondb.php');
         <meta name="author" content="José GIL">
         <meta name="description" content="Découvrez des casques moto dépassant même les exigences des tests de sécurité. Tous les casques Nolark au meilleur prix et avec en prime la livraison gratuite !">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         <link href="../css/styles.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="../favicon.ico">
     </head>
@@ -22,7 +23,7 @@ include('../includes/conexiondb.php');
         include('../includes/header.html.inc.php');
         ?>     
 
-        <form method ="post" actiion ="register.php">
+        <form method ="post" action ="register.php">
             <?php
             include('../includes/errors.php');
             ?>   
@@ -31,7 +32,7 @@ include('../includes/conexiondb.php');
             </div>
             <div class ="input-group">
                 <label>Nom d'utilisateur</label>
-                <input type ="text" name="nom d'utilisateur">
+                <input type ="text" name="username">
             </div>
             <div class ="input-group">
                 <label>Email</label>
@@ -44,6 +45,11 @@ include('../includes/conexiondb.php');
             <div class ="input-group">
                 <label>Comfimez le Mot de passe</label>
                 <input type ="password" name="password_2">
+            </div>
+            <br>
+            <div class ="input-group">
+                <label>Saisissez la réponse (12 + 4) </label>               
+                <input type="text" name ="captcha">
             </div>
             <br>
             <div class ="input-group">

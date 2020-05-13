@@ -5,6 +5,9 @@
      Email : jgil83000@gmail.com
 -->
 
+<?php
+include('../includes/conexiondb.php');
+?>      
 <html lang="fr-FR">
     <head>
         <title>Casques Nolark : Sécurité et confort, nos priorités !</title>
@@ -31,6 +34,7 @@
                 <label>Mot de passe</label>
                 <input type ="password" name="password_1">
             </div>
+            <br>
             <div class ="input-group">
                 <button type="submit" name ="login" class="btn">Se connecter</button>
             </div>
