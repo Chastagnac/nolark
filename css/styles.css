@@ -1,8 +1,8 @@
 
 /*CSS DU COMPTE*/
-form {
+form, .content {
     width: 50%;
-    margin : 0px auto;
+    margin : 916px;
     padding : 20px;
     border : 1px solid #B0C4DE;
     background : white;

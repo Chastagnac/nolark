@@ -1,5 +1,6 @@
 
 <?php
+
 session_start();
 $username;
 $captcha;
@@ -30,7 +31,7 @@ if (isset($_POST['register'])) { //Détermine si une variable est déclarée et 
     if ($password_1 !== $password_2) {//Détermine si une variable est vide
         array_push($errors, "Les mots de passe doivent être identiques");
     }
-    if($captcha !== "16"){
+    if ($captcha !== "16") {
         array_push($errors, "Veuillez saisir le bon captcha");
     }
 
@@ -41,7 +42,39 @@ if (isset($_POST['register'])) { //Détermine si une variable est déclarée et 
         mysqli_query($db, $sql);
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "Vous êtes bien connecté !";
-        header('location: index.php');
+        header('location: ../index.php');
     }
 }
+if (isset($_POST['login'])) {
+    $username = ($_POST['username']);
+    $password = ($_POST['password']);
+
+    if (empty($username)) {
+        array_push($errors, "Le nom d'utilisateur est nécessaire");
+    }
+    if (empty($password)) {
+        array_push($errors, "Le mot de passe est obligatoire .. ");
+    }
+
+    if (count($errors) == 0) {
+        $password = md5($password);
+        $sql = "SELECT * FROM loginform WHERE USERNAME ='$username' AND PASSWORD ='$password'";
+        $result = mysqli_query($db, $sql);
+        if (mysqli_num_rows($result) == 1) {
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = "Vous êtes bien connecté !";
+            header('location: ../index.php');
+        }
+    } else {
+        array_push($errors, "Mauvais mot de passe/nom d'utilisateur");
+        header('location: login.php');
+    }
+}
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header('location : login.php');
+}
+
     

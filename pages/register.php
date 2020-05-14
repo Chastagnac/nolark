@@ -55,6 +55,9 @@ include('../includes/conexiondb.php');
             <div class ="input-group">
                 <button type="submit" name ="register" class="btn">S'inscrire</button>
             </div> 
+            <p>
+                Deja membre ? <a href="login.php">Se connecter</a>
+            </p>
         </form>
     </div>
 </body>

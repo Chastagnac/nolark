@@ -21,6 +21,7 @@ include('../includes/conexiondb.php');
     <body>
         <?php
         include('../includes/header.html.inc.php');
+        include('../includes/errors.php');
         ?>
         <div class="header">
             <h2>Se connecter</h2>
@@ -32,7 +33,7 @@ include('../includes/conexiondb.php');
             </div>          
             <div class ="input-group">
                 <label>Mot de passe</label>
-                <input type ="password" name="password_1">
+                <input type ="password" name="password">
             </div>
             <br>
             <div class ="input-group">

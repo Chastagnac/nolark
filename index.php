@@ -43,9 +43,9 @@
                         </div>
                     <?php endif ?>
 
-                    <?php if (isset($_SESSION['username'])): ?>
+                    <?php if (isset($_SESSION["username"])): ?>
                         <p>Bienvenue <strong><?php echo $_SESSION['username']; ?></strong></p>
-                        <p><a href="" style="color : red;">Se déconnecter</a></p>
+                        <p><a href="../pages/login.php" name = "logout" style="color : red; margin: 3px;border-width: 5px; border-style: inset;border-color: darkred;">Déconnection</a></p>
                     <?php endif ?>
                     </p>
                 </div>
